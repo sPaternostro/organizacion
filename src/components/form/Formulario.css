@@ -24,7 +24,7 @@
 }
 
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:1400px) {
     .formulario {
         display: flex;
         flex-direction: column;
