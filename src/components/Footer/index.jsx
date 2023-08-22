@@ -1,19 +1,25 @@
 import './Footer.css'
+import cvImg from '../../img/cv.png'
+import linkedinImg from '../../img/linkedin.png'
+import githubImg from '../../img/github.png'
+import logo from '../../img/Logo.png'
+
+
 
 const Footer = () => {
-    return <footer className='footer' style={{ backgroundImage: "url(./img/footer.png)" }}>
+    return <footer className='footer'>
         <div className='redes'>
-            <a href='/img/CV_Paternostro.pdf'>
-                <img src="./img/cv.png" alt='CV' />
+            <a href='/CV_Paternostro.pdf' download>
+                <img src={cvImg} alt='CV' />
             </a>
             <a href='https://www.linkedin.com/in/spaternostro99/' target="_blank" rel="noopener noreferrer">
-                <img src="./img/linkedin.png" alt='linkedin' />
+                <img src={linkedinImg} alt='linkedin' />
             </a>
             <a href='https://github.com/sPaternostro' target="_blank" rel="noopener noreferrer">
-                <img src="./img/github.png" alt='github' />
+                <img src={githubImg} alt='github' />
             </a>
         </div>
-        <img src='./img/Logo.png' alt='org' />
+        <img src={logo} alt='org' />
         <strong>Desarrollado por sPaternostro</strong>
     </footer>
 }
